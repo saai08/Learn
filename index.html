@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black and Violet Web Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        #black-and-white, #violet {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #black-and-white {
+            background-color: black;
+            color: white;
+            text-shadow: 2px 2px 5px grey;
+        }
+        #violet {
+            background-color: rgb(35, 33, 141);
+            color: white;
+            display: none;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+        button:hover {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="black-and-white">
+        <h1>Welcome to My World</h1>
+        <button onclick="enterViolet()">Enter the World</button>
+    </div>
+    <div id="violet">
+        <h1>Welcome to the World of Codes</h1>
+    </div>
+    <script>
+        function enterViolet() {
+            document.getElementById('black-and-white').style.display = 'none';
+            document.getElementById('violet').style.display = 'flex';
+            document.body.style.backgroundColor = 'violet';
+        }
+    </script>
+</body>
+</html>
