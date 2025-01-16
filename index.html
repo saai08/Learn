@@ -49,15 +49,24 @@
             background-color: grey;
             color: white;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
     </style>
 </head>
 <body>
     <div id="black-and-white">
         <h1>Welcome to My World</h1>
+        <img src="image/download.jpeg" alt="Welcome Image">
         <button onclick="enterViolet()">ENTER</button>
     </div>
     <div id="violet">
         <h1>Welcome to the World of Codes</h1>
+        <img src="image/download.jpeg" alt="Code Image">
     </div>
     <script>
         function enterViolet() {
